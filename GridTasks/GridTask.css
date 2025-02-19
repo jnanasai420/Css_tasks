@@ -1,0 +1,36 @@
+.topcard {
+  background-color: aquamarine;
+  border: 2px solid black;
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  gap: 20px;
+}
+.topcard div {
+  background-color: skyblue;
+  border: 2px solid grey;
+}
+@media screen and (max-width: 425px) {
+  .topcard {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .topcard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .topcard {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .topcard {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .topcard {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
